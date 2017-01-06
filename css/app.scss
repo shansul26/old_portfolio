@@ -1,0 +1,158 @@
+---
+---
+
+/*
+*******
+None of these variable are being imported anywhere, they're just here for your convenience.
+*******
+*/
+
+// Breakpoints. Use these in your media queries.
+$babybear: 321px;
+$mamabear: 769px;
+$papabear: 1140px;
+$monsterbear: 1300px;
+
+// Some Style Variables
+$primary-blue: #19A3C4;
+$secondary-blue: #87EDFF;
+$white: #FFFFFF;
+$background-gray: #404040;
+$text-gray: #1F1F1F;
+
+$max-width: 960px;
+
+$header-font-family: sofia-pro, sans-serif;
+$header-font-style: normal;
+$header-font-weight: 700;
+$header-font-size: 80px;
+
+$secondary-header-font-size: 60px;
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $header-font-family;
+    font-style: $header-font-style;
+    font-weight: $header-font-weight;
+}
+
+.full-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: $white;
+}
+
+#cover-page {
+    background-color: $background-gray;
+    color: $white;
+    bottom: 100px;
+}
+
+.circle-xl {
+    width: 500px;
+    height: 500px;
+    background: #19A3C4;
+	-moz-border-radius: 250px;
+	-webkit-border-radius: 250px;
+	border-radius: 250px;
+    
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-xl h1 {
+    font-size: $header-font-size;
+}
+
+.bottom-nav {
+    position: absolute;
+    margin: auto;
+    top: 90vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    font-size: 40px;
+}
+
+.bottom-nav ul {
+    padding: 0;
+    text-align: center;
+}
+
+.bottom-nav li {
+    display: inline-block;
+    
+}
+
+.circle-xs {
+    width: 24px;
+    height: 24px;
+    background: #19A3C4;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+    
+    margin-left: 36px;
+    margin-right: 36px;
+    
+}
+
+#main-nav {
+    background: #404040;
+    height: 100vh;
+    
+    font-size: 60px;
+    color: #FFFFFF;
+    
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+#about {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#about-me-image {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    
+}
+
+h2 {
+    color: $primary-blue;
+    font-size: $secondary-header-font-size;
+    text-align: left;
+}
+
+p {
+    font-family: sofia-pro-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
+    text-align: left;
+}
+
+.affix {
+    top: 0px;
+}
