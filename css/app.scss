@@ -40,6 +40,15 @@ body {
     font-weight: $header-font-weight;
 }
 
+a {
+    color: $white;
+}
+
+a:hover {
+    color: $secondary-blue;
+    text-decoration: none;
+}
+
 .full-page {
     height: 100vh;
     width: 100vw;
@@ -94,7 +103,6 @@ body {
 
 .bottom-nav li {
     display: inline-block;
-    
 }
 
 .circle-xs {
@@ -145,7 +153,7 @@ h2 {
     text-align: left;
 }
 
-p {
+p, #project-list {
     font-family: sofia-pro-condensed, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -155,4 +163,8 @@ p {
 
 .affix {
     top: 0px;
+}
+
+#about, #projects, #contact {
+    min-height: 100vh;
 }
