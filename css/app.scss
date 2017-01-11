@@ -44,8 +44,9 @@ a {
     color: $white;
 }
 
-a:hover {
+a:hover, a:focus {
     color: $secondary-blue;
+    background: $background-gray !important;
     text-decoration: none;
 }
 
@@ -134,6 +135,22 @@ a:hover {
     list-style: none;
 }
 
+#main-nav>ul>li {
+    border-left: 30px;
+    border-left-style: solid;
+    border-left-color: $background-gray;
+}
+
+#main-nav>ul>li.active:not(:first-child) {
+    //color: $primary-blue;
+    border-left-style: solid;
+    border-left-color: $primary-blue;
+}
+
+#main-content {
+    position: relative;
+}
+
 #about {
     margin-top: 10px;
     text-align: center;
@@ -167,4 +184,39 @@ p, #project-list {
 
 #about, #projects, #contact {
     min-height: 100vh;
+}
+
+#bottom-content {
+    position: absolute;
+    position: absolute;
+    margin: auto;
+    top: 80vh;
+    
+}
+
+button {
+    font-family: sofia-pro-condensed, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px !important;
+    border: 5px;
+    border-style: solid;
+    border-color: $primary-blue;
+    background-color: $background-gray;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+}
+
+button:hover {
+    background-color: $primary-blue;
+}
+
+.fine-print {
+    font-family: sofia-pro-condensed, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
 }
