@@ -4,11 +4,11 @@ tagline: "UX Researcher & Interaction Designer"
 url: "http://shansul.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
-socialimg: /img/social.jpg # be sure to change this image
+socialimg: /img/my-picture.jpg
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+phone: 
+email: 
 
 # Use this for production
 #sass:

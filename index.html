@@ -2,7 +2,7 @@
 layout: default
 title: "Shannon Sullivan"
 fulltitle: "Shannon Sullivan | UX Researcher and Interaction Designer" 
-excerpt: Lorem ipsum
+excerpt: 
 ---
 <!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
@@ -26,17 +26,29 @@ excerpt: Lorem ipsum
 
 <div class="full-page container">
     <div class="row">
-        <nav class="col-sm-4" id="main-nav">
-            <ul class="nav">
-                <li><a href="#cover-page">shannon</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-            <div id="bottom-content">
-                <button>download resume</button>
-                <div class="fine-print">&copy; 2017 Shannon Sullivan</div>
-            </div>
+        <nav class="col-xs-12 col-sm-4 navbar-toggleable-md" id="main-nav">
+            <!--<div class="container-fluid">-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#navbar-main-contents">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main-contents">
+                    <ul class="nav">
+                        <li><a href="#cover-page">shannon</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                    <!--
+                    <div id="bottom-content">
+                        <button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="padding-right: 10px;"></span>download resume</button>
+                        <div class="fine-print">&copy; 2017 Shannon Sullivan</div>
+                    </div>-->
+                </div>
+            <!--</div>-->
         </nav>
         <div class="col-sm-4">
         </div>
@@ -44,10 +56,14 @@ excerpt: Lorem ipsum
             <div id="about">
                 <img id="about-me-image" src="img/my-picture.jpg">
                 <h2>Hi, I'm Shannon</h2>
-                <p>I am a UX Researcher and Interaction Designer currently pursuing my Master's in Human-Computer Interaction at Carnegie Mellon University. Cat ipsum dolor sit amet, ears back wide eyed need to chase tail. Meow all night having their mate disturbing sleeping humans playing with balls of wool lie on your belly and purr when you are asleep ignore the squirrels, you'll never catch them anyway sleep in the bathroom sink yet chase laser. Destroy the blinds.</p>
+                <p>I am a UX researcher and interaction designer currently pursuing my Master’s in Human-Computer Interaction at Carnegie Mellon University, expecting to graduate in August 2017. Before Carnegie Mellon, I came from a technical background as a software engineer-turned-UX designer at Lutron Electronics. After uncovering my passion and talent for design, I chose to pursue my master’s degree to build upon the skills I had already begun to acquire on the job and through studying independently on my own time.</p>
+                <p>While my eclectic background makes me a valuable utility team member, I am most passionate about conducting research to inform good design. I believe that any problem can be interesting if approached with an open mind and enjoy working in a team to create unique solutions that have a positive impact on those around us.I am interested in working on a product team made up of people with a wide variety of backgrounds and skillsets, where we all can continue to grow by learning from each other.</p>
+                <p>Outside of design, you can usually find me cooking or baking something delicious for my friends and family, reading almost anything, making playlists on Spotify, or enjoying some quality time playing board games with my friends and family.</p>
             </div>
             <div id="projects">
                 <h2>Projects</h2>
+                <h3>In progress!</h3>
+                <p>I'm excited to share what I've been up to at Carnegie Mellon and am currently working on adding some of my work to this website. Please come back soon and you'll see the following projects:</p>
                 <ul id="project-list">
                     <li>Quantum Vue</li>
                     <li>MeterMaid</li>
@@ -59,6 +75,7 @@ excerpt: Lorem ipsum
             <div id="contact">
                 <h2>Contact Me</h2>
                 <p>Like what you see? Have any questions? Let's chat!</p>
+                <button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="padding-right: 10px;"></span>download resume</button>
             </div>
         </div>
     </div>
