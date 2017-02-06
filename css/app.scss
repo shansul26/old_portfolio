@@ -109,7 +109,7 @@ a:hover, a:focus {
 .circle-xs {
     width: 24px;
     height: 24px;
-    background: #19A3C4;
+    background: $primary-blue;
 	-moz-border-radius: 12px;
 	-webkit-border-radius: 12px;
 	border-radius: 12px;
@@ -120,16 +120,39 @@ a:hover, a:focus {
 }
 
 #main-nav {
-    background: #404040;
-    height: 100vh;
-    
-    font-size: 60px;
-    color: #FFFFFF;
-    
-    padding: 0;
-    margin: 0;
-    
-    
+    z-index: 2;
+}
+
+//collapsed navbar
+@media screen and (max-width: 767px){
+    #main-nav {
+        background: $primary-blue;
+
+        font-size: 60px;
+        color: $white;
+
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+
+    }
+}
+
+//expanded navbar
+@media screen and (min-width: 768px){
+    #main-nav {
+        background: $background-gray;
+        height: 100vh;
+
+        font-size: 60px;
+        color: $white;
+
+        padding: 0;
+        margin: 0;
+
+
+    }
 }
 
 #main-nav ul {
@@ -137,14 +160,13 @@ a:hover, a:focus {
     list-style: none;
 }
 
-#main-nav>ul>li {
+#navbar-main-contents>ul>li {
     border-left: 30px;
     border-left-style: solid;
     border-left-color: $background-gray;
 }
 
-#main-nav>ul>li.active:not(:first-child) {
-    //color: $primary-blue;
+#navbar-main-contents>ul>li.active:not(:first-child) {
     border-left-style: solid;
     border-left-color: $primary-blue;
 }
@@ -195,20 +217,23 @@ p, #project-list {
     
     position: absolute;
     bottom: 30px;
+    left: 0px;
     
     text-align: center;
 }
 
-button {
+#resume-download {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
-    font-size: 40px !important;
+    font-size: 29px;//40px !important;
+    color: $text-gray;
     
-    border: 5px !important;
+    border: 3px !important;
     border-style: solid !important;
-    border-color: $primary-blue !important;
-    background-color: $background-gray !important;
+    border-color: $text-gray;//$primary-blue !important;
+    background-color: $white;
+    //background-color: $background-gray !important;
     
     padding: 10px;
     
@@ -219,7 +244,9 @@ button {
 }
 
 button:hover {
-    background-color: $primary-blue;
+    background-color: $primary-blue !important;
+    border-color: $primary-blue !important;
+    color: $white !important;
 }
 
 .fine-print {
@@ -230,6 +257,22 @@ button:hover {
 }
 
 .navbar-toggle {
-    border-color: $primary-blue;
+    float: left;
     
+}
+
+#navbar-main-contents {
+    background-color: $background-gray;
+    padding: 0;
+}
+
+.icon-bar {
+    background-color: $white;   
+}
+
+h3 {
+    font-family: sofia-pro-condensed, sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
 }
