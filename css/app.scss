@@ -25,9 +25,11 @@ $max-width: 960px;
 $header-font-family: sofia-pro, sans-serif;
 $header-font-style: normal;
 $header-font-weight: 700;
-$header-font-size: 80px;
+$header-font-size: 8vh;
 
-$secondary-header-font-size: 60px;
+$secondary-header-font-size: 6vh;
+
+$body-font-size: 3vh;
 
 html, body {
     padding: 0;
@@ -40,15 +42,22 @@ body {
     font-weight: $header-font-weight;
 }
 
-a {
+.nav>li>a {
     color: $white;
 }
 
-a:hover, a:focus {
+.nav>li>a:hover, .nav>li>a:focus {
     color: $secondary-blue;
     background: $background-gray !important;
     text-decoration: none;
 }
+
+.bottom-nav>ul>li>a {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
 
 .full-page {
     height: 100vh;
@@ -63,12 +72,14 @@ a:hover, a:focus {
 }
 
 .circle-xl {
-    width: 500px;
-    height: 500px;
+    max-height: 500px;
+    max-width: 500px;
+    width: 50vmax;
+    height: 50vmax;
     background: #19A3C4;
-	-moz-border-radius: 250px;
-	-webkit-border-radius: 250px;
-	border-radius: 250px;
+	-moz-border-radius: 25vmax;
+	-webkit-border-radius: 25vmax;
+	border-radius: 25vmax;
     
     position: absolute;
     margin: auto;
@@ -89,12 +100,12 @@ a:hover, a:focus {
 .bottom-nav {
     position: absolute;
     margin: auto;
-    top: 90vh;
+    top: 85vh;
     right: 0;
     left: 0;
     bottom: 0;
     
-    font-size: 40px;
+    font-size: 4vh;
 }
 
 .bottom-nav ul {
@@ -107,15 +118,19 @@ a:hover, a:focus {
 }
 
 .circle-xs {
-    width: 24px;
-    height: 24px;
+    min-width: 10px;
+    min-height: 10px;
+    width: 2vw;
+    height: 2vw;
+    max-width: 24px;
+    max-height: 24px;
     background: $primary-blue;
-	-moz-border-radius: 12px;
-	-webkit-border-radius: 12px;
-	border-radius: 12px;
+	-moz-border-radius: 10vw;
+	-webkit-border-radius: 10vw;
+	border-radius: 10vw;
     
-    margin-left: 21px;
-    margin-right: 21px;
+    margin-left: 1vw;
+    margin-right: 1vw;
     
 }
 
@@ -128,7 +143,7 @@ a:hover, a:focus {
     #main-nav {
         background: $primary-blue;
 
-        font-size: 60px;
+        font-size: $secondary-header-font-size;
         color: $white;
 
         padding: 0;
@@ -145,7 +160,7 @@ a:hover, a:focus {
         background: $background-gray;
         height: 100vh;
 
-        font-size: 60px;
+        font-size: $secondary-header-font-size;
         color: $white;
 
         padding: 0;
@@ -182,9 +197,12 @@ a:hover, a:focus {
 
 #about-me-image {
     object-fit: cover;
-    width: 500px;
-    height: 500px;
+    width: 75vmin;
+    height: 75vmin;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 50%;
+    margin-top: 20px;
     
 }
 
@@ -198,7 +216,7 @@ p, #project-list {
     font-family: sofia-pro-condensed, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 29px;
+    font-size: $body-font-size;
     text-align: left;
 }
 
@@ -226,7 +244,7 @@ p, #project-list {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
-    font-size: 29px;//40px !important;
+    font-size: $body-font-size;//40px !important;
     color: $text-gray;
     
     border: 3px !important;
@@ -253,7 +271,7 @@ button:hover {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
-    font-size: 29px;
+    font-size: $body-font-size;
 }
 
 .navbar-toggle {
@@ -274,5 +292,9 @@ h3 {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 500;
-    font-size: 29px;
+    font-size: $body-font-size;
+}
+
+.project-link {
+    color: $text-gray;
 }
