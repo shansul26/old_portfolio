@@ -25,11 +25,11 @@ $max-width: 960px;
 $header-font-family: sofia-pro, sans-serif;
 $header-font-style: normal;
 $header-font-weight: 700;
-$header-font-size: 8vh;
+$header-font-size: 10vmin;
 
-$secondary-header-font-size: 6vh;
+$secondary-header-font-size: 32px;
 
-$body-font-size: 3vh;
+$body-font-size: 20px;
 
 html, body {
     padding: 0;
@@ -74,12 +74,12 @@ body {
 .circle-xl {
     max-height: 500px;
     max-width: 500px;
-    width: 50vmax;
-    height: 50vmax;
+    width: 75vmin;
+    height: 75vmin;
     background: #19A3C4;
-	-moz-border-radius: 25vmax;
-	-webkit-border-radius: 25vmax;
-	border-radius: 25vmax;
+	-moz-border-radius: 25vmin;
+	-webkit-border-radius: 25vmin;
+	border-radius: 37.5vmax;
     
     position: absolute;
     margin: auto;
@@ -95,15 +95,16 @@ body {
 
 .circle-xl h1 {
     font-size: $header-font-size;
+    position: relative;
+    margin: 0 auto;
 }
 
 .bottom-nav {
     position: absolute;
     margin: auto;
-    top: 85vh;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 1vh;
     
     font-size: 4vh;
 }
@@ -197,8 +198,8 @@ body {
 
 #about-me-image {
     object-fit: cover;
-    width: 75vmin;
-    height: 75vmin;
+    width: 50vmin;
+    height: 50vmin;
     max-width: 500px;
     max-height: 500px;
     border-radius: 50%;
@@ -218,6 +219,7 @@ p, #project-list {
     font-weight: 300;
     font-size: $body-font-size;
     text-align: left;
+    letter-spacing: 0.025em;
 }
 
 .affix {
