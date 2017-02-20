@@ -1,6 +1,9 @@
 ---
 title: Quantum Vue
 layout: portfolio
+client: Lutron Electronics
+duration: 3 releases (6 months each)
+role: Developer, Interaction Designer, Researcher
 ---
 
 The one that started it all. I inherited the Quantum Vue project from other researchers and designers so most of the work was already done by the time I arrived. I started by adding new features and gradually became the expert on the software.
