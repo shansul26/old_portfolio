@@ -9,9 +9,7 @@
 {% include head.html %}
 	
 	<body>
-        <nav>
-            <a href="index.html#projects">Go back to main page</a>
-        </nav>
+        <a href="index.html#projects">Go back to main page</a>
 		<!--[if lt IE 8]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -19,6 +17,32 @@
             <div class="row">
                 <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                     <h2>{{page.title}}</h2>
+                    <div class="proj-summary">
+                        {%if page.client != nil %}
+                            <div class="row">
+                                <div class="col-xs-2 proj-summary-section">Client</div>
+                                <div class="col-xs-10 proj-summary-content">{{page.client}}</div>
+                            </div>
+                        {% endif %}
+                        {%if page.team != nil %}
+                            <div class="row">
+                                <div class="col-xs-2 proj-summary-section">Team Size</div>
+                                <div class="col-xs-10 proj-summary-content">{{page.team}}</div>
+                            </div>
+                        {% endif %}
+                        {%if page.duration != nil %}
+                            <div class="row">
+                                <div class="col-xs-2 proj-summary-section">Duration</div>
+                                <div class="col-xs-10 proj-summary-content">{{page.duration}}</div>
+                            </div>
+                        {% endif %}
+                        {%if page.role != nil %}
+                            <div class="row">
+                                <div class="col-xs-2 proj-summary-section">Role</div>
+                                <div class="col-xs-10 proj-summary-content">{{page.role}}</div>
+                            </div>
+                        {% endif %}
+                        </div>
                     {{ content }}
                 </div>
             </div>
