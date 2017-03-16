@@ -1,7 +1,7 @@
 ---
 title: uResearch
 layout: portfolio
-client: Carnegie Mellon University (uReveal)
+client: uReveal
 team: 5 students
 duration: 7 weeks
 role: UX Researcher

@@ -28,8 +28,9 @@ $header-font-weight: 700;
 $header-font-size: 10vmin;
 
 $secondary-header-font-size: 32px;
-
+$tertiary-header-font-size: 26px;
 $body-font-size: 20px;
+$small-font-size: 14px;
 
 html, body {
     padding: 0;
@@ -208,13 +209,18 @@ body {
     
 }
 
+.portfolio-img {
+    max-width: 100%;
+    
+}
+
 h2 {
     color: $primary-blue;
     font-size: $secondary-header-font-size;
     text-align: left;
 }
 
-p, #project-list, .proj-summary-content {
+p, #project-list, .proj-summary-content, ol {
     font-family: sofia-pro-condensed, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -223,8 +229,12 @@ p, #project-list, .proj-summary-content {
     letter-spacing: 0.025em;
 }
 
-.proj-summary-section {
+.proj-summary-section{
     font-size: $body-font-size;
+}
+
+h3 {
+    font-size: $tertiary-header-font-size
 }
 
 .proj-summary {
@@ -300,13 +310,47 @@ button:hover {
     background-color: $white;   
 }
 
-h3 {
-    font-family: sofia-pro-condensed, sans-serif !important;
-    font-style: normal;
-    font-weight: 600;
-    font-size: $body-font-size;
-}
-
 .project-link {
     color: $text-gray;
+}
+
+.portfolio-card {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    //border: 10px solid black;
+    //box-shadow: 6px 6px 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40rem;
+    max-width: 100%;
+}
+
+.portfolio-card-image {
+    height: 25rem;
+    background:#0f0f0f;
+    display: flex;
+    overflow: hidden;
+}
+
+.portfolio-card-image>img {
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
+    
+}
+
+.portfolio-card-text-area {
+    height: 10rem;
+    background: #787878;
+    padding: 10px;
+}
+
+.portfolio-card-text-area > a {
+    font-size: $body-font-size;
+    color: $white;
+}
+
+.portfolio-card-text-area>p {
+    font-size: $small-font-size;
+    color: $white;
+    
 }
