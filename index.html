@@ -60,7 +60,8 @@ excerpt:
                     </div>
                     <div class="col-md-8 col-md-offset-1 col-xs-10 col-xs-offset-1">
                         <h2>Hi, I'm Shannon</h2>
-                        <p>I am a UX researcher and interaction designer currently pursuing my Master’s in Human-Computer Interaction at Carnegie Mellon University, expecting to graduate in August 2017. Before Carnegie Mellon, I came from a technical background as a software-engineer-turned-UX-designer at Lutron Electronics. After uncovering my passion and talent for design, I chose to pursue my master’s degree to build upon the skills I had already begun to acquire on the job and through studying independently on my own time.</p>
+                        <p>I am a UX researcher and interaction designer currently pursuing my Master’s in Human-Computer Interaction at Carnegie Mellon University, expecting to graduate in August 2017.</p>
+                        <p>Before Carnegie Mellon, I came from a technical background as a software-engineer-turned-UX-designer at Lutron Electronics. After uncovering my passion and talent for design, I chose to pursue my master’s degree to build upon the skills I had already begun to acquire on the job and through studying independently on my own time.</p>
                         <p>While my eclectic background makes me valuable in a variety of roles, I am most passionate about conducting research to inform good design. I believe that any problem can be interesting if approached with an open mind and enjoy working in a team to create unique solutions that have a positive impact on those around us.</p>
                         <p>Outside of design, you can usually find me cooking or baking something delicious for my friends and family, reading almost anything, making playlists on Spotify, or enjoying some quality time playing board games with my friends and family.</p>
                     </div>
@@ -71,20 +72,30 @@ excerpt:
                     <div class="col-md-8 col-md-offset-1 col-xs-10 col-xs-offset-1">
                         <h2>Projects</h2>
                         <h3>In progress!</h3>
-                        <p>I'm excited to share what I've been up to at Carnegie Mellon and am currently working on adding some of my work to this website. Please come back soon and you'll see the following projects:</p>
-                        <ul id="project-list">
+                        <p>I'm excited to share what I've been up to at Carnegie Mellon and am currently working on adding some of my work to this website. Please come back soon and you'll see even more projects!</p>
+                        <div style="height:5rem;"></div>
+                        
+                            {% for post in site.posts %}
+                            <!-- col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 -->
+                            <div class="portfolio-card" onclick="location.href=&quot;{{post.url}}&quot;">
+                                <div class="portfolio-card-image row" style="background:{{ post.hero-image-background }}">
+                                    <img src="{{post.hero-image-path}}">
+                                </div>
+                                <div class="portfolio-card-text-area row">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    <p>{{post.summary}}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        <!--<ul id="project-list">
                             {% for post in site.posts %}
                             <li class="project-link"><a href="{{ post.url }}">{{ post.title }}</a></li>
                             {% endfor %}
-                            <!--<li>Quantum Vue</li>
-                            <li>MeterMaid</li>
-                            <li>uResearch</li>
-                            <li>My Portfolio Website</li>
-                            <li>Swivel</li>-->
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
+            <div style="height:5rem;"></div>
             <div id="contact">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-1 col-xs-10 col-xs-offset-1">
