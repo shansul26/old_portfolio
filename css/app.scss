@@ -27,10 +27,12 @@ $header-font-style: normal;
 $header-font-weight: 700;
 $header-font-size: 10vmin;
 
-$secondary-header-font-size: 32px;
+$secondary-header-font-size: 4rem;
 $tertiary-header-font-size: 26px;
-$body-font-size: 20px;
+$body-font-size: 2rem;
 $small-font-size: 14px;
+
+$body-font-family: sofia-pro-condensed;
 
 html, body {
     padding: 0;
@@ -96,6 +98,7 @@ body {
 
 .circle-xl h1 {
     font-size: $header-font-size;
+    font-weight: 700;
     position: relative;
     margin: 0 auto;
 }
@@ -217,11 +220,13 @@ body {
 h2 {
     color: $primary-blue;
     font-size: $secondary-header-font-size;
+    font-weight: 500;
     text-align: left;
+    margin-bottom: 3rem;
 }
 
 p, #project-list, .proj-summary-content, ol {
-    font-family: sofia-pro-condensed, sans-serif;
+    font-family: $body-font-family, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: $body-font-size;
@@ -234,7 +239,8 @@ p, #project-list, .proj-summary-content, ol {
 }
 
 h3 {
-    font-size: $tertiary-header-font-size
+    font-size: $tertiary-header-font-size;
+    font-weight: 700;
 }
 
 .proj-summary {
@@ -248,6 +254,7 @@ h3 {
 
 #about, #projects, #contact {
     min-height: 100vh;
+    margin-bottom: 8rem;
 }
 
 #bottom-content {
