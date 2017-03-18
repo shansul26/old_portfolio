@@ -35,6 +35,12 @@ $(document).ready(function () {
     });
     
     $("#resume-download").on('click', downloadResume);
+    
+    $('#portfolio-nav').affix({
+        offset: {
+            top: 75
+        }
+})
  });
 
  $(window).resize(function () {
