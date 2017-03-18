@@ -290,11 +290,17 @@ h3 {
     
 }
 
-button:hover {
+#resume-download:hover {
     background-color: $primary-blue !important;
-    border-color: $primary-blue !important;
+    border-color: $text-gray !important;
     color: $white !important;
 }
+
+/*button:hover {
+    background-color: $primary-blue !important;
+    //border-color: $primary-blue !important;
+    color: $white !important;
+}*/
 
 .fine-print {
     font-family: sofia-pro-condensed, sans-serif !important;
@@ -356,8 +362,77 @@ button:hover {
     color: $white;
 }
 
-.portfolio-card-text-area>p {
+.portfolio-card-text-area > p {
     font-size: $small-font-size;
     color: $white;
     
+}
+
+.portfolio-nav-hero {
+    display: flex;
+    height: 300px;
+    overflow: hidden;
+}
+
+.portfolio-nav-hero >  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#portfolio-nav {
+    border-radius: 0px;
+    height: 300px;
+    
+    border: 0px;
+    box-shadow: 0 1px 6px 0 #eee;
+    
+    //animation transitions
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
+#portfolio-nav > button {
+    font-family: sofia-pro-condensed, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $body-font-size;
+    color: $background-gray;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $background-gray !important;
+    background-color: transparent;
+    
+    padding: 10px;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    position: absolute;
+    margin: 10px;
+    
+}
+
+#portfolio-nav > button:hover {
+    background-color: $primary-blue !important;
+    color: $white;
+}
+
+#portfolio-nav.affix {
+    height: 8rem;
+}
+
+#portfolio-nav.affix > .portfolio-nav-hero {
+    height: 8rem;
+    overflow: hidden;   
+}
+
+iframe {
+    width: 64rem;
+    height: 36rem;
 }
