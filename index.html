@@ -42,11 +42,11 @@ excerpt:
                         <li><a href="#projects">projects</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
-                    <!--
-                    <div id="bottom-content">
-                        <button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="padding-right: 10px;"></span>download resume</button>
-                        <div class="fine-print">&copy; 2017 Shannon Sullivan</div>
-                    </div>-->
+                    <div id="bottom-nav-content" class="hidden-xs">
+                        <button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-file" aria-hidden="true" style="padding-right: 10px;"></span>view my resume</button>
+                        <!--<div class="fine-print">&copy; 2017 Shannon Sullivan</div>-->
+                        <div class="fine-print">Designed and developed with &hearts; by Shannon Sullivan, &copy; 2017</div>
+                    </div>
                 </div>
             <!--</div>-->
         </nav>
@@ -88,11 +88,6 @@ excerpt:
                                 </div>
                             </div>
                             {% endfor %}
-                        <!--<ul id="project-list">
-                            {% for post in site.posts %}
-                            <li class="project-link"><a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% endfor %}
-                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -100,9 +95,10 @@ excerpt:
                 <div class="row">
                     <div class="col-md-8 col-md-offset-1 col-xs-10 col-xs-offset-1">
                         <h2>Contact Me</h2>
-                        <p>Like what you see? Have any questions? Let's chat!</p>
-                        <div style="height:1rem;"></div>
-                        <button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="padding-right: 10px;"></span>download resume</button>
+                        <p style="margin-bottom:2rem;">Like what you see? Have any questions? Let's chat!</p>
+                        <div class="contact-info"><img src="img/email.svg"><span>shannon@shansul.com</span></div>
+                        <div class="contact-info"><img src="img/linkedin.svg"><span>www.linkedin.com/in/shannon-sullivan</span></div>
+                        <!--<button type="button" class="btn-large" id="resume-download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true" style="padding-right: 10px;"></span>download resume</button>-->
                     </div>
                 </div>
             </div>

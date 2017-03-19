@@ -186,7 +186,7 @@ body {
     border-left-color: $background-gray;
 }
 
-#navbar-main-contents>ul>li.active:not(:first-child) {
+#navbar-main-contents>ul>li.active { //:not(:first-child)
     border-left-style: solid;
     border-left-color: $primary-blue;
 }
@@ -225,7 +225,7 @@ h2 {
     margin-bottom: 3rem;
 }
 
-p, #project-list, .proj-summary-content, ol {
+p, #project-list, .proj-summary-content, ol, .contact-info {
     font-family: $body-font-family, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -252,19 +252,23 @@ h3 {
     top: 0px;
 }
 
-#about, #projects, #contact {
-    min-height: 100vh;
+#about, #projects {
     margin-bottom: 8rem;
 }
 
-#bottom-content {
+#about, #projects, #contact {
+    min-height: 100vh;
+}
+
+#bottom-nav-content {
     width: 100%;
     
-    align-items: center;
+    //align-items: center;
     
     position: absolute;
-    bottom: 30px;
-    left: 0px;
+    bottom: 0;
+    
+    padding: 10px;
     
     text-align: center;
 }
@@ -273,14 +277,14 @@ h3 {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
-    font-size: $body-font-size;//40px !important;
-    color: $text-gray;
+    font-size: 2.5rem;//40px !important;
+    color: $white;
     
     border: 3px !important;
     border-style: solid !important;
-    border-color: $text-gray;//$primary-blue !important;
-    background-color: $white;
-    //background-color: $background-gray !important;
+    border-color: $white !important;
+    //background-color: $white;
+    background-color: transparent !important;
     
     padding: 10px;
     
@@ -290,23 +294,24 @@ h3 {
     
 }
 
-#resume-download:hover {
+/*#resume-download:hover {
     background-color: $primary-blue !important;
     border-color: $text-gray !important;
     color: $white !important;
-}
-
-/*button:hover {
-    background-color: $primary-blue !important;
-    //border-color: $primary-blue !important;
-    color: $white !important;
 }*/
+
+#resume-download:hover {
+    background-color: $white !important;
+    //border-color: $primary-blue !important;
+    color: $background-gray !important;
+}
 
 .fine-print {
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
-    font-size: $body-font-size;
+    font-size: 1rem;
+    margin-top:1rem;
 }
 
 .navbar-toggle {
@@ -435,4 +440,17 @@ h3 {
 iframe {
     width: 64rem;
     height: 36rem;
+}
+
+.contact-info {
+    margin-bottom: .75rem;
+}
+
+.contact-info>img {
+    height: 1.25em;
+    position: absolute;
+}
+
+.contact-info>span {
+    margin-left: 2.5em;
 }
