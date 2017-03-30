@@ -29,10 +29,10 @@ $header-font-size: 10vmin;
 
 $secondary-header-font-size: 4rem;
 $tertiary-header-font-size: 26px;
-$body-font-size: 2rem;
+$body-font-size: 1.75rem;//sofia 2rem;
 $small-font-size: 14px;
 
-$body-font-family: sofia-pro-condensed;
+$body-font-family: merriweather;
 
 html, body {
     padding: 0;
@@ -220,7 +220,7 @@ body {
 h2 {
     color: $primary-blue;
     font-size: $secondary-header-font-size;
-    font-weight: 500;
+    font-weight: 700;//500;
     text-align: left;
     margin-bottom: 3rem;
 }
@@ -231,21 +231,29 @@ p, #project-list, .proj-summary-content, ol, .contact-info {
     font-weight: 300;
     font-size: $body-font-size;
     text-align: left;
-    letter-spacing: 0.025em;
+    //letter-spacing: 0.025em;
+    line-height: 2.75rem;
 }
 
 .proj-summary-section{
     font-size: $body-font-size;
+    font-family: $body-font-family;
 }
 
 h3 {
     font-size: $tertiary-header-font-size;
     font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
 }
 
 .proj-summary {
     margin-top: 3%;
     margin-bottom: 3%;
+}
+
+.proj-summary>.row {
+    margin-bottom: 0.5rem;
 }
 
 .affix {
@@ -363,14 +371,15 @@ h3 {
 }
 
 .portfolio-card-text-area > a {
-    font-size: $body-font-size;
+    font-size: 2rem;
     color: $white;
 }
 
 .portfolio-card-text-area > p {
     font-size: $small-font-size;
     color: $white;
-    
+    line-height: normal;
+    margin-top: 0.5rem;
 }
 
 .portfolio-nav-hero {
@@ -453,4 +462,11 @@ iframe {
 
 .contact-info>span {
     margin-left: 2.5em;
+}
+
+.proj-title {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 4rem;
 }
