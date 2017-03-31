@@ -75,14 +75,14 @@ body {
 }
 
 .circle-xl {
-    max-height: 500px;
-    max-width: 500px;
-    width: 75vmin;
-    height: 75vmin;
+    max-height: 80vmin;
+    max-width: 80vmin;
+    width: 50rem;
+    height: 50rem;
     background: #19A3C4;
-	-moz-border-radius: 25vmin;
-	-webkit-border-radius: 25vmin;
-	border-radius: 37.5vmax;
+	-moz-border-radius: 25rem;
+	-webkit-border-radius: 25rem;
+	border-radius: 25rem;
     
     position: absolute;
     margin: auto;
@@ -96,8 +96,37 @@ body {
     text-align: center;
 }
 
+.circle-lg {
+    width: 30rem;
+    height: 30rem;
+    background: #19A3C4;
+	-moz-border-radius: 15rem;
+	-webkit-border-radius: 15rem;
+	border-radius: 15rem;
+    
+    max-width: 50vmin;
+    max-height: 50vmin;
+    
+    position: absolute;
+    margin: auto;
+    top: 0;
+    //bottom: 0;
+    //right: 2rem;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-lg h1 {
+    font-weight: 700;
+    position: relative;
+    margin: 0 auto;
+}
+
 .circle-xl h1 {
-    font-size: $header-font-size;
+    //font-size: $header-font-size;
     font-weight: 700;
     position: relative;
     margin: 0 auto;
@@ -123,16 +152,14 @@ body {
 }
 
 .circle-xs {
-    min-width: 10px;
-    min-height: 10px;
-    width: 2vw;
-    height: 2vw;
-    max-width: 24px;
-    max-height: 24px;
+    width: 0.5em;
+    height: 0.5em;
+    max-width: 10vmin;
+    max-height: 10vmin;
     background: $primary-blue;
-	-moz-border-radius: 10vw;
-	-webkit-border-radius: 10vw;
-	border-radius: 10vw;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
     
     margin-left: 1vw;
     margin-right: 1vw;
@@ -141,6 +168,12 @@ body {
 
 #main-nav {
     z-index: 2;
+}
+
+@media screen and (max-width:767px), screen and (max-height:767px) {
+    .circle-xl h1 {
+        font-size: 6.5rem;
+    }
 }
 
 //collapsed navbar
@@ -172,6 +205,10 @@ body {
         margin: 0;
 
 
+    }
+    
+    .circle-xl h1 {
+        font-size: 9rem;
     }
 }
 
