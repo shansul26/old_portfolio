@@ -214,7 +214,8 @@ body {
 
 .portfolio-img {
     max-width: 100%;
-    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h2 {
@@ -365,7 +366,7 @@ h3 {
 }
 
 .portfolio-card-text-area {
-    height: 10rem;
+    height: 12rem;//10rem;
     background: #787878;
     padding: 10px;
 }
@@ -462,6 +463,10 @@ iframe {
 
 .contact-info>span {
     margin-left: 2.5em;
+}
+
+.contact-info>span>a {
+    color: $text-gray;
 }
 
 .proj-title {
