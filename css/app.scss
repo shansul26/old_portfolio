@@ -349,6 +349,21 @@ h3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 40rem;
     max-width: 100%;
+    
+    -webkit-transition: all .35s ease; /* Safari and Chrome */
+    -moz-transition: all .35s ease; /* Firefox */
+    -ms-transition: all .35s ease; /* IE 9 */
+    -o-transition: all .35s ease; /* Opera */
+    transition: all .35s ease;
+}
+
+.portfolio-card:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+    
 }
 
 .portfolio-card-image {
@@ -374,6 +389,10 @@ h3 {
 .portfolio-card-text-area > a {
     font-size: 2rem;
     color: $white;
+}
+
+.portfolio-card-text-area > a:hover {
+    text-decoration: none;
 }
 
 .portfolio-card-text-area > p {
@@ -454,6 +473,10 @@ iframe {
 
 .contact-info {
     margin-bottom: .75rem;
+}
+
+.contact-info:hover {
+    cursor: pointer;
 }
 
 .contact-info>img {
