@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $('#main-nav').affix({
       offset: {
-        top: $('#particles-js').outerHeight()
+        top: $('#cover-page').outerHeight()
       }
     });
     
@@ -44,7 +44,7 @@ $(document).ready(function () {
  });
 
  $(window).resize(function () {
-    $('#main-nav').data('bs.affix').options.offset.top = $('#particles-js').outerHeight();
+    $('#main-nav').data('bs.affix').options.offset.top = $('#cover-page').outerHeight();
  });
 
 function downloadResume () {
