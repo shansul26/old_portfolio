@@ -74,28 +74,6 @@ body {
     bottom: 100px;
 }
 
-/*.circle-xl {
-    max-height: 80vmin;
-    max-width: 80vmin;
-    width: 50rem;
-    height: 50rem;
-    background: #19A3C4;
-	-moz-border-radius: 25rem;
-	-webkit-border-radius: 25rem;
-	border-radius: 25rem;
-    
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
-}*/
-
 #bottom-scroll {
     width: 100vw;
     position: absolute;
@@ -104,21 +82,15 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 2rem;
-    //padding: 1rem;
+    padding: 1.5vh;
+    min-height: 8rem;
 }
 
 .scroll-down-text {
-    padding-top: 1rem;
+    //padding-top: 1rem;
     font-size: 2rem;
 }
 
-.scroll-down-arrow {
-    position:absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 1.75rem;
-}
 
 .down-arrow {
     border: solid $white;
@@ -138,15 +110,17 @@ body {
     left: 0;
     
     width: 100vw;
-    height: 40vh;
+    height: 40vh;//25rem;
     text-align: center;
 }
 
 .rect-xl {
-    max-height: 80vmin;
-    max-width: 80vmin;
-    width: 80rem;
-    height: 20rem;
+    min-height: 3rem;
+    max-height: 40rem;
+    width: 80vw;
+    //height: 30vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     
     background: $background-gray;
     
@@ -271,11 +245,16 @@ body {
     
     #bottom-scroll {
         height: 10vh;
+        min-height: 10rem;
         background: $primary-blue;
     }
     
     #particles-js {
         height: 90vh;
+    }
+    
+    .rect-xl {
+        max-width: 80vmin;
     }
     
     .rect-xl h1 {
