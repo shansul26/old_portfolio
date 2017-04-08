@@ -9,6 +9,9 @@ hero-image-path: "/img/MeterMaid/metermaid-icon.png"
 hero-image-background: "#32B67A"
 ---
 
+<h3>Final Product</h3>
+<iframe width="476" height="1000" src="//invis.io/C69BWXR45" frameborder="0" allowfullscreen></iframe>
+
 <h3>Background</h3>
 <p>This is a project I worked on for my Interaction Design Studio class at Carnegie Mellon University. My team was responsible for designing a mobile application to provide a service to a particular audience. Chose between four different problems, each of which defined a primary and secondary persona. After selecting our problem based off of group interest, we rapidly conducted guerrilla research to gain additional insights into the problem space, and iterated on a mobile application design. Our final deliverables were a click-through InVision prototype, a presentation explaining our insights into the problem space as well as how our application addresses them, and a profesionally prepared document detailing our process.</p>
 
