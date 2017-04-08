@@ -84,6 +84,7 @@ body {
     font-size: 2rem;
     padding: 1.5vh;
     min-height: 8rem;
+    cursor: pointer;
 }
 
 .scroll-down-text {
@@ -317,6 +318,15 @@ h2 {
     margin-bottom: 3rem;
 }
 
+.about-section {
+    font-family: $body-font-family;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
 p, #project-list, .proj-summary-content, ol, .contact-info {
     font-family: $body-font-family, sans-serif;
     font-style: normal;
@@ -441,6 +451,8 @@ h3 {
     width: 40rem;
     max-width: 100%;
     
+    cursor: pointer;
+    
     -webkit-transition: all .35s ease; /* Safari and Chrome */
     -moz-transition: all .35s ease; /* Firefox */
     -ms-transition: all .35s ease; /* IE 9 */
@@ -557,7 +569,7 @@ h3 {
     overflow: hidden;   
 }
 
-iframe {
+.video {
     width: 64rem;
     height: 36rem;
 }

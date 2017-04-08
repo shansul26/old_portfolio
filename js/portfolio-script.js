@@ -34,6 +34,20 @@ $(document).ready(function () {
         } // End if
     });
     
+     $("#bottom-scroll").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $('#about').offset().top
+            }, 800, function(){
+
+            });
+    });
+    
     $("#resume-download").on('click', downloadResume);
     
     $('#portfolio-nav').affix({
