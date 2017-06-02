@@ -9,7 +9,7 @@ hero-image-path: "/img/Quantum%20Vue/quantum-leaf.png"
 hero-image-background: "#339B47"
 ---
 
-<h3>Summary</h3>
+<h3>About This Project</h3>
 <p>Quantum Vue is Lutron's award-winning commercial lighting system interface. Its web-based interface enables facility managers to control and maintain their building's lighting system to optimize energy savings and occupant health. It is part of the Lutron Quantum ecosystem.</p>
 
 <img class="portfolio-img" src="../img/Quantum%20Vue/quantum-vue-dashboard.jpg">

@@ -349,6 +349,14 @@ h3 {
     margin-top: 5rem;
 }
 
+h4 {
+    font-size: 2rem;//$body-font-size;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7d7d7d;
+}
+
 .proj-summary {
     margin-top: 3%;
     margin-bottom: 3%;
