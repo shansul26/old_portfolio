@@ -342,11 +342,22 @@ p, #project-list, .proj-summary-content, ol, .contact-info {
     font-family: $body-font-family;
 }
 
+#portfolio-content > h2 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
 h3 {
-    font-size: $tertiary-header-font-size;
+    /*font-size: $tertiary-header-font-size;
     font-weight: 700;
     margin-bottom: 3rem;
-    margin-top: 5rem;
+    margin-top: 5rem;*/
+    font-family: $body-font-family;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 h4 {
@@ -608,4 +619,6 @@ h4 {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 4rem;
+    margin-top: 3rem;
+    font-size: 5.5rem;
 }
