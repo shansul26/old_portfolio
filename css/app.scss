@@ -227,6 +227,10 @@ body {
         height: 100vh;
     }
     
+    .portfolio-card {
+        //margin: 0 auto;
+    }
+    
 }
 
 //expanded navbar
@@ -264,6 +268,11 @@ body {
     
     .sub-title-text {
         font-size: 3.25rem;
+    }
+    
+    .portfolio-card {
+        margin-right: 2.5rem;
+        display: inline-block;
     }
 }
 
@@ -327,7 +336,7 @@ h2 {
     text-align: left;
 }
 
-p, #project-list, .proj-summary-content, ol, .contact-info {
+p, #project-list, .proj-summary-content, ol, .contact-info, .portfolio-body-list {
     font-family: $body-font-family, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -462,13 +471,15 @@ h4 {
 }
 
 .portfolio-card {
-    margin: 0 auto;
-    margin-bottom: 4rem;
+    //margin: 0 auto;
+    //display: inline-block;
+    //margin-right: 8rem;
+    margin-bottom: 2.5rem;
     //border: 10px solid black;
     //box-shadow: 6px 6px 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 40rem;
-    max-width: 100%;
+    //max-width: 100%;
     
     cursor: pointer;
     
@@ -621,4 +632,15 @@ h4 {
     margin-bottom: 4rem;
     margin-top: 3rem;
     font-size: 5.5rem;
+}
+
+.image-caption {
+    font-family: $body-font-family;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-top: -1.5rem;
+    margin-bottom: 1.75rem;
+    
 }
