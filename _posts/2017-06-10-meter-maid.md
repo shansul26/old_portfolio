@@ -1,6 +1,6 @@
 ---
 title: MeterMaid
-summary: A concept for a mobile application to facilitate sharing of vacant driveways.
+summary: A mobile application concept to facilitate the sharing of vacant driveways.
 layout: portfolio
 team: 4 students
 duration: 4 weeks
