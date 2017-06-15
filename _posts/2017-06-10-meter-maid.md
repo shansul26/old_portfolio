@@ -91,13 +91,35 @@ hero-image-background: "#32B67A"
 <p>I focused on the storyboards pictured below, which depict the ideal case for how someone loaning out their driveway might use the application on a daily basis.</p>
 <img class="portfolio-img" src="../img/MeterMaid/storyboard.png">
 
-<h3>First Wireframe Sketches</h3>
+<h3>Wireframe Sketches</h3>
 
 <p>After making several storyboards depicting the several uses of MeterMaid, we started making wireframes for the application, focusing on the experience for the person renting out their driveway.</p>
 <p>We initially decided to break the application’s functionality down into five main components: scheduling, earnings, history, profile editing, and settings. The driveway owner should get an overview of everything that has happened in a main landing page.</p>
 <p>I focused on creating sketches for the earnings and history feature. When doing these initial sketches, I wanted to give the owner a clear understanding of how much income they are making off of their participation in the service. I thought this would be important for their budgeting and also for <b>communicating the value</b> they get out of participating in the service.</p>
 <img class="portfolio-img" src="../img/MeterMaid/earnings-wireframes-1-of-2-v1.png">
-<p>I did several initial sketches, exploring different options for visualizing the information (bar chat versus line chart) and the details users can navigate. The application should have a good balance of simplicity and useful information.</p>
+<p>I did several initial sketches, exploring different options for visualizing the information (bar chart versus line chart) and the details users can navigate. The application should have a good balance of simplicity and useful information.</p>
 <p>The history page was more straightforward. The owner should be able to see a comprehensive list of who parked in her driveway and for how long. She should also be able to see more information about the parker and report any inappropriate behavior.</p>
 <img class="portfolio-img" src="../img/MeterMaid/earnings-wireframes-2-of-2-v1.png">
 <p>After meeting as a team to review each component of the application, we proceeded to digitize our wireframes and create higher-fidelity screens, which we presented to the class for feedback.</p>
+<img class="portfolio-img" src="../img/MeterMaid/First-Iteration-Screens.png">
+
+<h3>Feedback, Modifications, and Final Touches</h3>
+<p>When we presented our application concept to the class, the biggest point of feedback we received was that it might be helpful to add more functionality to <b>support trust</b> for the driveway owner.</p>
+<p>We considered this feedback and decided to add a feature where the driveway owner can check in on their property by viewing a live feed. We theorized that the MeterMaid service could provide the installation of such equipment for the driveway owner, possibly in partnership with an existing security company. Much like existing resource sharing applications like Lyft, this would require someone from the company to physically go to the owner to both install the equipment and ensure that the property fits the service standards.</p>
+<p>After agreeing to add this concept, we made adjustments to the driveway owner’s screens. We placed the button to view the live feed very prominently so it would be easy for owners to check.</p>
+
+<img class="portfolio-img" src="../img/MeterMaid/MeterMaid-Final-Screens.png">
+
+<p>Finally, we added some animations using <a href="http://principleformac.com/">Principle</a> to better simulate the interactivity of the application and add aspects of joy. I worked with one of my teammates to create the animation for when the graphs first load in the application.</p>
+
+<div class="row">
+    <div class="col-sm-6"><img class="portfolio-img" src="../img/MeterMaid/final_animation_today.gif" style="border: 0.5rem solid #000000"></div>
+    <div class="col-sm-6"><img class="portfolio-img" src="../img/MeterMaid/history_earnings.gif" style="border: 0.5rem solid #000000"></div>
+</div>
+
+<p>We combined these animations with our concept screens to create the final <a href="https://invis.io/C69BWXR45">click-through inVision prototype</a>.</p>
+
+<h3>Next Steps</h3>
+<p>This was a four-week project where we rapidly went from research to a fleshed out prototype. There were steps we could take to validate our design decisions that we did not have the time or the resources to pursue.</p>
+<p>For example, when designing an application concept, it is a good idea to conduct usability tests with target users along the way, both to validate that the design is something they would use and that it is something they would understand.</p>
+<p>If we were to conduct more tests to vet our designs, the next step would be to make adjustments based off of feedback and then go into development.</p>
