@@ -70,6 +70,8 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: $white;
+    //padding: none;
+    //margin: none;
 }
 
 #cover-page {
@@ -610,6 +612,44 @@ h4 {
     margin-top: 0.5rem;
 }
 
+.portfolio-hero {
+    height: 20rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-hero > span {
+    position: relative;
+    top: 10rem;
+    font-size: 5rem;
+    color: $white;
+    
+}
+
+.centered-text, #overview-details > div > h3,  #overview-details > div > p{
+    text-align:center;
+}
+
+#overview-details > div > p {
+    margin-bottom: 0rem;
+}
+
+.portfolio-img-placeholder {
+    height: 40rem;
+    width:50rem;
+    position: relative;
+    margin: 0 auto;
+    background: $secondary-blue;
+    margin-bottom: 2rem;
+}
+
+.portfolio-img-group {
+    margin-top: 6rem;   
+}
+
+
+//this is obsolete with new design
+//TODO: get rid of this
 .portfolio-nav-hero {
     display: flex;
     height: 300px;
@@ -636,8 +676,8 @@ h4 {
     transition: all .35s;
 }
 
-
-#portfolio-nav > button {
+//#portfolio-nav > button is legacy. when I switch over to the new style, this should not be necessary
+#portfolio-nav > button,  #back-button{
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
@@ -660,7 +700,32 @@ h4 {
     
 }
 
-#portfolio-nav > button:hover {
+#back-button{
+    font-family: sofia-pro, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $white;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $white !important;
+    background-color: transparent;
+    
+    padding: 10px;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    position: relative;
+    display: inline;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+#portfolio-nav > button:hover, #back-button:hover{
     background-color: $white !important;
     color: $text-gray;
 }

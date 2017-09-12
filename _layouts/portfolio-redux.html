@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+        <!--<nav id="portfolio-nav" class="navbar navbar-default navbar-fixed-top" style="background:{{page.hero-image-background}}">
+        </nav>-->
+        <div class="full-page container">
+            <div class="row">
+                <nav class="col-xs-12 col-sm-3 col-lg-3 navbar-toggleable-md" id="main-nav">
+                    <!--<div class="container-fluid">-->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle navbar-left" data-toggle="collapse" data-target="#navbar-main-contents">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse" id="navbar-main-contents">
+                            <ul class="nav">
+                                <li>
+                                    <!--<a href="index.html#projects" class=""></a>-->
+                                    <button class="btn btn-default navbar-btn" id="back-button" onclick="location.href=&quot;index.html#projects&quot;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="padding-right: 10px;"></span>go back</button>
+                                </li>
+                                <li><a href="#overview">overview</a></li>
+                                <li><a href="#need">the need</a></li>
+                                <li><a href="#solution">the solution</a></li>
+                                <li><a href="#process">the process</a></li>
+                            </ul>
+                            <div id="bottom-nav-content" class="hidden-xs">
+                                <div class="fine-print">Designed and developed with &hearts; by Shannon Sullivan, &copy; 2017</div>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                </nav>
+                <div class="col-sm-3 col-lg-3">
+                </div>
+                <div class="col-sm-9 col-lg-9" id="main-content" style="padding:unset;">
+                    <div id="overview">
+                        <div class="portfolio-hero" style="background:{{page.hero-image-background}};"><span>{{page.title}}</span></div>
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+                                <p class="centered-text">{{page.overview}}</p>
+                                <!-- TODO: insert overview image -->
+                                <div class="row" id="overview-details">
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <h3>CLIENT</h3>
+                                        <p>{{page.client}}</p>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <h3>SCOPE</h3>
+                                        {% for point in page.scope %}
+                                        <p>{{point.text}}</p>
+                                        {% endfor %}
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <h3>MY ROLES</h3>
+                                        {% for role in page.roles %}
+                                        <p>{{role.text}}</p>
+                                        {% endfor %}
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <h3>SKILLS</h3>
+                                        {% for skill in page.skills %}
+                                        <p>{{skill.text}}</p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {{content}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+		
+	</body>
+</html>
+
+{% include footer.html %}
