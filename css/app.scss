@@ -440,7 +440,35 @@ h4 {
     font-family: $header-font-family;
     text-transform: uppercase;
     font-weight: 700;
-    color: #7d7d7d;
+    //color: #7d7d7d;
+    color: $primary-blue;
+}
+
+h5 {
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+    font-weight: bold;
+    text-align: center;
+}
+
+.layered-text > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: normal;
+    
+}
+
+.participant-number {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.participant-name {
+    text-align: center;
+    font-size: $body-font-size;
+    font-weight: 300;
+    color: #787878; 
 }
 
 .proj-summary {
@@ -634,17 +662,74 @@ h4 {
     margin-bottom: 0rem;
 }
 
-.portfolio-img-placeholder {
-    height: 40rem;
-    width:50rem;
-    position: relative;
-    margin: 0 auto;
-    background: $secondary-blue;
-    margin-bottom: 2rem;
+//sm and xs - images should all be full width
+@media screen and (max-width: 767px){
+    .portfolio-img-redux {
+        width: 100%;
+        height: auto;
+    }
+    
+    .portfolio-img-redux-single {
+        width: 100%;
+        height: auto;
+    }
+}
+
+//md and lg - images should be restricted by height
+@media screen and (min-width: 768px){
+    .portfolio-img-redux {
+        height: 100%;
+        width: auto;
+    }
+    
+    .portfolio-img-redux-single {
+        height: 40rem;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .portfolio-img-group > div > div {
+        height: 45rem;
+    }
 }
 
 .portfolio-img-group {
     margin-top: 6rem;   
+}
+
+.portfolio-img-group > .row {
+    //height: 45rem;
+}
+
+.portfolio-img-group > div > div {
+    overflow:hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.portfolio-img-redux {
+    display:flex;
+    margin: 0 auto;
+}
+
+.portfolio-img-single, .portfolio-img-multiple {
+    height: 40rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-img-single {
+    background-size: contain;
+}
+
+.portfolio-img-multiple {
+    background-size: cover;
 }
 
 
