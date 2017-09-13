@@ -643,7 +643,11 @@ h5 {
 .portfolio-hero {
     height: 20rem;
     text-align: center;
-    margin-bottom: 5rem;
+   // margin-bottom: 8.5rem;
+}
+
+#portfolio-overview-text {
+    margin-top: 8.5rem;
 }
 
 .portfolio-hero > span {
@@ -654,12 +658,71 @@ h5 {
     
 }
 
+#solution-info {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+#solution-info > button {
+    margin-top: 8rem;
+}
+
+.portfolio-section {
+    margin-bottom: 12rem;
+}
+
+.portfolio-sub-section {
+    margin-bottom: 8rem;
+}
+
 .centered-text, #overview-details > div > h3,  #overview-details > div > p{
     text-align:center;
 }
 
 #overview-details > div > p {
     margin-bottom: 0rem;
+}
+
+.main-area-btn {
+    font-family: sofia-pro, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $primary-blue;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $primary-blue !important;
+    background-color: transparent;
+    
+    padding: 10px;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-area-btn:hover {
+    color: $white;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $white !important;
+    background-color: $primary-blue;
+}
+
+.portfolio-overview-img {
+    max-height: 60rem;
+    max-width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 //sm and xs - images should all be full width
@@ -672,6 +735,15 @@ h5 {
     .portfolio-img-redux-single {
         width: 100%;
         height: auto;
+    }
+    
+    .portfolio-img-group > div {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .portfolio-img-group > div > div {
+        margin-bottom: 1rem;
     }
 }
 
@@ -690,9 +762,18 @@ h5 {
         margin-bottom: 2rem;
     }
     
+    .portfolio-img-group > div {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
     .portfolio-img-group > div > div {
         height: 45rem;
     }
+}
+
+.text-artifact {
+    margin-top: 2rem;
 }
 
 .portfolio-img-group {
@@ -705,8 +786,8 @@ h5 {
 
 .portfolio-img-group > div > div {
     overflow:hidden;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    //margin-top: 2rem;
+    //margin-bottom: 2rem;
 }
 
 

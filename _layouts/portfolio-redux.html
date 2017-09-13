@@ -44,12 +44,19 @@
                 <div class="col-sm-3 col-lg-3">
                 </div>
                 <div class="col-sm-9 col-lg-9" id="main-content" style="padding:unset;">
-                    <div id="overview">
-                        <div class="portfolio-hero" style="background:{{page.hero-image-background}};"><span>{{page.title}}</span></div>
+                    <div id="overview" class="portfolio-section">
+                        <div class="portfolio-hero hidden-xs" style="background:{{page.hero-image-background}};"><span>{{page.title}}</span></div>
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
-                                <p class="centered-text">{{page.overview}}</p>
-                                <img class="portfolio-img" src="../img/Vivid/solution-screens.png">
+                                <p class="centered-text" id="portfolio-overview-text">{{page.overview}}</p>
+                                <div id="solution-info">
+                                    {%if page.final-solution-media != nil %}
+                                        {{page.final-solution-media}}
+                                    {% endif %}
+                                    {%if page.final-solution-link != nil %}
+                                        <button class="btn btn-default main-area-btn" onclick="location.href=&quot;{{page.final-solution-link}}&quot;">view solution<span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="padding-left: 10px; margin-top: 0.4rem;"></span></button>
+                                    {% endif %}
+                                </div>
                                 <!--<div class="portfolio-img-single" style="background-image:url(../img/Vivid/solution-screens.png)"></div>-->
                                 <!-- TODO: insert overview image -->
                                 <div class="row" id="overview-details">
@@ -79,9 +86,13 @@
                                         {% endfor %}
                                     </div>
                                 </div>
-                                {{content}}
-                                <div style="height: 10rem;"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2"">
+                            {{content}}
+                            <div style="height: 10rem;"></div>
                         </div>
                     </div>
                 </div>
