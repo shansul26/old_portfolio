@@ -70,6 +70,8 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: $white;
+    //padding: none;
+    //margin: none;
 }
 
 #cover-page {
@@ -438,7 +440,35 @@ h4 {
     font-family: $header-font-family;
     text-transform: uppercase;
     font-weight: 700;
-    color: #7d7d7d;
+    //color: #7d7d7d;
+    color: $primary-blue;
+}
+
+h5 {
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+    font-weight: bold;
+    text-align: center;
+}
+
+.layered-text > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: normal;
+    
+}
+
+.participant-number {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.participant-name {
+    text-align: center;
+    font-size: $body-font-size;
+    font-weight: 300;
+    color: #787878; 
 }
 
 .proj-summary {
@@ -610,6 +640,182 @@ h4 {
     margin-top: 0.5rem;
 }
 
+.portfolio-hero {
+    height: 20rem;
+    text-align: center;
+   // margin-bottom: 8.5rem;
+}
+
+#portfolio-overview-text {
+    margin-top: 8.5rem;
+}
+
+.portfolio-hero > span {
+    position: relative;
+    top: 10rem;
+    font-size: 5rem;
+    color: $white;
+    
+}
+
+#solution-info {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+#solution-info > button {
+    margin-top: 8rem;
+}
+
+.portfolio-section {
+    margin-bottom: 12rem;
+}
+
+.portfolio-sub-section {
+    margin-bottom: 8rem;
+}
+
+.centered-text, #overview-details > div > h3,  #overview-details > div > p{
+    text-align:center;
+}
+
+#overview-details > div > p {
+    margin-bottom: 0rem;
+}
+
+.main-area-btn {
+    font-family: sofia-pro, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $primary-blue;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $primary-blue !important;
+    background-color: transparent;
+    
+    padding: 10px;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-area-btn:hover {
+    color: $white;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $white !important;
+    background-color: $primary-blue;
+}
+
+.portfolio-overview-img {
+    max-height: 60rem;
+    max-width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+//sm and xs - images should all be full width
+@media screen and (max-width: 767px){
+    .portfolio-img-redux {
+        width: 100%;
+        height: auto;
+    }
+    
+    .portfolio-img-redux-single {
+        width: 100%;
+        height: auto;
+    }
+    
+    .portfolio-img-group > div {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .portfolio-img-group > div > div {
+        margin-bottom: 1rem;
+    }
+}
+
+//md and lg - images should be restricted by height
+@media screen and (min-width: 768px){
+    .portfolio-img-redux {
+        height: 100%;
+        width: auto;
+    }
+    
+    .portfolio-img-redux-single {
+        height: 40rem;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .portfolio-img-group > div {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .portfolio-img-group > div > div {
+        height: 45rem;
+    }
+}
+
+.text-artifact {
+    margin-top: 2rem;
+}
+
+.portfolio-img-group {
+    margin-top: 6rem;   
+}
+
+.portfolio-img-group > .row {
+    //height: 45rem;
+}
+
+.portfolio-img-group > div > div {
+    overflow:hidden;
+    //margin-top: 2rem;
+    //margin-bottom: 2rem;
+}
+
+
+.portfolio-img-redux {
+    display:flex;
+    margin: 0 auto;
+}
+
+.portfolio-img-single, .portfolio-img-multiple {
+    height: 40rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-img-single {
+    background-size: contain;
+}
+
+.portfolio-img-multiple {
+    background-size: cover;
+}
+
+
+//this is obsolete with new design
+//TODO: get rid of this
 .portfolio-nav-hero {
     display: flex;
     height: 300px;
@@ -636,8 +842,8 @@ h4 {
     transition: all .35s;
 }
 
-
-#portfolio-nav > button {
+//#portfolio-nav > button is legacy. when I switch over to the new style, this should not be necessary
+#portfolio-nav > button,  #back-button{
     font-family: sofia-pro-condensed, sans-serif !important;
     font-style: normal;
     font-weight: 300;
@@ -660,7 +866,32 @@ h4 {
     
 }
 
-#portfolio-nav > button:hover {
+#back-button{
+    font-family: sofia-pro, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $white;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $white !important;
+    background-color: transparent;
+    
+    padding: 10px;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    position: relative;
+    display: inline;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    
+}
+
+#portfolio-nav > button:hover, #back-button:hover{
     background-color: $white !important;
     color: $text-gray;
 }
