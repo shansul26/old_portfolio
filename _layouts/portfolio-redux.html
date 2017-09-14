@@ -31,9 +31,13 @@
                                     <button class="btn btn-default navbar-btn" id="back-button" onclick="location.href=&quot;index.html#projects&quot;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="padding-right: 10px;"></span>go back</button>
                                 </li>
                                 <li><a href="#overview">overview</a></li>
+                                {% for section in page.sections %}
+                                    <li><a href="#{{section.id}}">{{section.text}}</a></li>
+                                {% endfor %}
+                                <!--
                                 <li><a href="#need">the need</a></li>
                                 <li><a href="#solution">the solution</a></li>
-                                <li><a href="#process">the process</a></li>
+                                <li><a href="#process">the process</a></li>-->
                             </ul>
                             <div id="bottom-nav-content" class="hidden-xs">
                                 <div class="fine-print">Designed and developed with &hearts; by Shannon Sullivan, &copy; 2017</div>
@@ -60,11 +64,11 @@
                                 <!--<div class="portfolio-img-single" style="background-image:url(../img/Vivid/solution-screens.png)"></div>-->
                                 <!-- TODO: insert overview image -->
                                 <div class="row" id="overview-details">
+                                    {% if page.client != nil %}
                                     <div class="col-xs-12 col-sm-6 col-md-3">
                                         <h3>CLIENT</h3>
                                         <p>{{page.client}}</p>
                                     </div>
-
                                     <div class="col-xs-12 col-sm-6 col-md-3">
                                         <h3>SCOPE</h3>
                                         {% for point in page.scope %}
@@ -85,12 +89,34 @@
                                         <p>{{skill.text}}</p>
                                         {% endfor %}
                                     </div>
+                                    {% else %}
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h3>SCOPE</h3>
+                                        {% for point in page.scope %}
+                                        <p>{{point.text}}</p>
+                                        {% endfor %}
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h3>MY ROLES</h3>
+                                        {% for role in page.roles %}
+                                        <p>{{role.text}}</p>
+                                        {% endfor %}
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h3>SKILLS</h3>
+                                        {% for skill in page.skills %}
+                                        <p>{{skill.text}}</p>
+                                        {% endfor %}
+                                    </div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2"">
+                        <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
                             {{content}}
                             <div style="height: 10rem;"></div>
                         </div>
