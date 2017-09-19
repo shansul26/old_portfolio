@@ -49,6 +49,7 @@ $(document).ready(function () {
     });
     
     $("#resume-download").on('click', downloadResume);
+    $("#resume-download-body").on('click', downloadResume);
     
     $('#portfolio-nav').affix({
         offset: {

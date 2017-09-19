@@ -697,7 +697,10 @@ h5 {
     border-color: $primary-blue !important;
     background-color: transparent;
     
-    padding: 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
     -moz-border-radius: 14px;
 	-webkit-border-radius: 14px;
@@ -715,6 +718,36 @@ h5 {
     border-style: solid !important;
     border-color: $white !important;
     background-color: $primary-blue;
+}
+
+#resume-download-body {
+    font-family: sofia-pro, sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: $primary-blue;
+    
+    border: 3px !important;
+    border-style: solid !important;
+    border-color: $primary-blue !important;
+    background-color: transparent;
+    
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+    -moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+    
+    display: flex;
+    margin-left: 0;
+    margin-top: 4rem;
+}
+
+#resume-download-body > .glyphicon {
+    margin-top: .5rem;
 }
 
 .portfolio-overview-img {
@@ -857,7 +890,10 @@ h5 {
     border-color: $white !important;
     background-color: transparent;
     
-    padding: 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
     -moz-border-radius: 14px;
 	-webkit-border-radius: 14px;
@@ -880,7 +916,10 @@ h5 {
     border-color: $white !important;
     background-color: transparent;
     
-    padding: 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
     -moz-border-radius: 14px;
 	-webkit-border-radius: 14px;
