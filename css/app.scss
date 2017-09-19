@@ -47,6 +47,7 @@ body {
     font-family: $header-font-family;
     font-style: $header-font-style;
     font-weight: $header-font-weight;
+    overflow-x: hidden;
 }
 
 .nav>li>a {
@@ -501,7 +502,7 @@ h5 {
     position: absolute;
     bottom: 0;
     
-    padding: 10px;
+    padding: 1rem;
     
     text-align: center;
 }
