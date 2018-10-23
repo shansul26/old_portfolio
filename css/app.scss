@@ -14,17 +14,19 @@ $papabear: 1140px;
 $monsterbear: 1300px;
 
 // Some Style Variables
-$primary-blue: #19A3C4;
+$primary-blue: #2F68B2;
+$hyperlink-blue: #5E9FF4;
 $secondary-blue: #8FDFEF;//#87EDFF;
 $white: #FFFFFF;
 $background-gray: #404040;
 $text-gray: #1F1F1F;
+$black: #000000;
 
 $max-width: 960px;
 
-$header-font-family: sofia-pro, sans-serif;
+$header-font-family: georgia, serif;
 $header-font-style: normal;
-$header-font-weight: 700;
+$header-font-weight: 400;
 $header-font-size: 10vmin;
 
 $secondary-header-font-size: 4rem;
@@ -32,10 +34,11 @@ $tertiary-header-font-size: 26px;
 $body-font-size: 1.75rem;//sofia 2rem;
 $small-font-size: 1.5rem;
 
-$body-font-family: merriweather;
+$body-font-family: "Open Sans";
+$body-font-weight: normal;
 
 ::selection {
-    background: $secondary-blue
+    //background: $secondary-blue
 }
 
 html, body {
@@ -50,14 +53,87 @@ body {
     overflow-x: hidden;
 }
 
-.nav>li>a {
-    color: $white;
+#headline {
+    margin-top: 12rem;
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
-    color: $secondary-blue;
-    background: $background-gray !important;
-    text-decoration: none;
+#headline>h1 {
+    font-weight: 700;
+    text-align: left;
+}
+
+h1 {
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-family: $body-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: $body-font-family;
+    color: $text-gray;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+}
+
+a {
+    color: $hyperlink-blue;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: $hyperlink-blue;
+}
+
+.portfolio-header {
+    margin-top: 5rem;
+}
+
+.section-header {
+    height: 1rem;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.section-header>img {
+    height: 2rem;
+    width:auto;
+    background-color: $white;
+}
+
+.nav>li>a, .nav>li>ul>li>a {
+    color: $text-gray;
+    padding: 0;
+    font-family: $body-font-family;
+    font-weight: normal;
+}
+
+.nav>li>ul>li {
+    padding-left: 1em;
+}
+
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>ul>li>a:hover, .nav>li>ul>li>a:focus {
+    color: $primary-blue !important;
+    background: $white !important;
+    text-decoration: underline;
+    //text-decoration: none;
+    //border-right: .005rem solid $black;
 }
 
 .bottom-nav>ul>li>a {
@@ -65,7 +141,9 @@ body {
     padding-right: 0px;
 }
 
-
+#contact-details {
+    margin-top: 4rem;
+}
 
 .full-page {
     height: 100vh;
@@ -201,18 +279,35 @@ body {
     
 }
 
-.circle {
-    width: 25rem;
-    height: 25rem;
+.logo {
+    width: 3.5rem;
+    height: 3.5rem;
     background: $primary-blue;
-	-moz-border-radius: 12.5rem;
-	-webkit-border-radius: 12.5rem;
-	border-radius: 12.5rem;
-    
-    margin: 0 auto;
+	-moz-border-radius: 2.5em;
+	-webkit-border-radius: 2.5em;
+	border-radius: 2.5em;
+    margin-bottom: 1rem;
+    background-image: url("../img/Favicon.png");
+    background-size: contain;
+}
+
+.logo:hover {
+    cursor:pointer;
+}
+
+.circle {
+    width: 10rem;
+    height: 10rem;
+    background: $primary-blue;
+	-moz-border-radius: 5rem;
+	-webkit-border-radius: 5rem;
+	border-radius: 5rem;
     
     background-size: cover;
     background-position: center center;
+    
+    display: inline-block;
+    vertical-align: top;
     
 }
 
@@ -224,26 +319,68 @@ body {
     background-image: url("../img/lafayette-college-acopian.jpg");
 }
 
+#lutron-electronics > .circle {
+    background-image: url("../img/lutron.jpg");
+}
+
+#jpmorgan-chase > .circle {
+    background-image: url("../img/jpmorgan-chase.JPG");
+}
+
 .sub-circle-text {
-    text-align: center;
-    margin-top: 2rem;
+    text-align: left;
+    //display: inline-block;
+    vertical-align: top;
+    margin-left: 1rem;
+}
+
+.sub-circle-text > h5 {
+    font-family: $body-font-family;
+    color: $primary-blue;
+    font-weight: 700;
+    text-align: left;
+    font-size: 2rem;
+    margin: 0rem;
 }
 
 .sub-circle-text > span {
-    font-size: 2rem;
+    font-family: $body-font-family;
+    text-align: left;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 .sub-circle-text > p {
-    font-size: $small-font-size;
-    text-align: center;
+    font-size: $body-font-size;
+    text-align: left;
     line-height: 2rem;
     margin-top: .75rem;
 }
 
+.timeline {
+    text-align: left;
+}
 
+.timeline > dl > dt {
+    width: 10rem;
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.timeline > dl > dd {
+    margin-left: 12rem;
+}
 
 #main-nav {
     z-index: 2;
+    padding-top: 5rem;
+    //padding-left: 1%;
+    //padding-right: 1%;
+    overflow: scroll;
 }
 
 #bottom-scroll {
@@ -284,25 +421,46 @@ body {
     
     #particles-js {
         height: 100vh;
-    }x
+    }
     
     .portfolio-card {
         //margin: 0 auto;
+    }
+    
+    #navbar-main-contents {
+        background-color: $white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    #main-nav {
+        //box-shadow: 0px 5px 20px grey;
+    }
+    
+    #main-nav ul {
+        font-size: 2rem;
     }
     
 }
 
 //expanded navbar
 @media screen and (min-width: 768px){
+    
+    #navigation-section {
+        margin-top: 6rem;
+    }
+    
     #main-nav {
-        background: $background-gray;
+        background: $white;
         height: 100vh;
 
-        font-size: $secondary-header-font-size;
-        color: $white;
+        font-size: 2rem;//$secondary-header-font-size;
+        color: $text-gray;
 
-        padding: 0;
+        //padding: 0;
         margin: 0;
+        
+        border-right: .005rem solid $black;
 
 
     }
@@ -334,7 +492,8 @@ body {
     }
     
     .key-location {
-        display: inline-block;
+        //display: inline-block;
+        text-align: left;
     }
 }
 
@@ -343,15 +502,19 @@ body {
     list-style: none;
 }
 
-#navbar-main-contents>ul>li {
+/*#navbar-main-contents>ul>li {
     border-left: 20px;
     border-left-style: solid;
-    border-left-color: $background-gray;
+    border-left-color: $white;
+}
+*/
+.nav>li.active>a, #back { //:not(:first-child)
+    font-weight: bold;
+    color: $primary-blue;
 }
 
-#navbar-main-contents>ul>li.active { //:not(:first-child)
-    border-left-style: solid;
-    border-left-color: $secondary-blue;
+#back {
+    font-family: $body-font-family;
 }
 
 #main-content {
@@ -359,7 +522,7 @@ body {
 }
 
 #projects {
-    margin-top:5rem;
+    padding-top:5rem;
 }
 
 #about {
@@ -385,13 +548,13 @@ body {
     margin-bottom: 2rem;
 }
 
-h2 {
+/*h2 {
     color: $primary-blue;
     font-size: $secondary-header-font-size;
     font-weight: 700;//500;
     text-align: left;
     margin-bottom: 3rem;
-}
+}*/
 
 .about-section {
     font-family: $body-font-family;
@@ -405,7 +568,7 @@ h2 {
 p, #project-list, .proj-summary-content, ol, .contact-info, .portfolio-body-list {
     font-family: $body-font-family, sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     font-size: $body-font-size;
     text-align: left;
     //letter-spacing: 0.025em;
@@ -436,7 +599,7 @@ h3 {
     text-align: left;
 }
 
-h4 {
+/*h4 {
     font-size: 2rem;//$body-font-size;
     margin-bottom: 2rem;
     font-family: $header-font-family;
@@ -444,14 +607,7 @@ h4 {
     font-weight: 700;
     //color: #7d7d7d;
     color: $primary-blue;
-}
-
-h5 {
-    font-size: $body-font-size;
-    font-family: $body-font-family;
-    font-weight: bold;
-    text-align: center;
-}
+}*/
 
 .layered-text > p {
     text-align: center;
@@ -461,16 +617,60 @@ h5 {
     
 }
 
-.participant-number {
-    text-align: center;
+.callout-dl {
+    margin-bottom: 0;
+}
+    
+.callout-dl > dt {
+    float: left;
+    width: 4rem;
+    overflow: hidden;
+    clear: left;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
     font-size: 4rem;
+    color: $primary-blue;
+    font-weight: bold;
+}
+
+.callout-dl > dd {
+    margin-left: 4rem;
+    font-size: $body-font-size;
+    font-weight: 300;   
+    display:inline;
+}
+/*
+.participant-number {
+    text-align: left;
+    font-size: 4rem;
+    color: $primary-blue;
+    font-weight: bold;
+    display: inline;
+    //margin-right: 2rem;
 }
 
 .participant-name {
-    text-align: center;
+    text-align: left;
     font-size: $body-font-size;
-    font-weight: 300;
-    color: #787878; 
+    font-weight: 300;   
+    display:inline;
+}*/
+
+.text-deliverable > h4 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.text-deliverable > h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.text-deliverable > p {
+    margin-bottom: 2rem;
+    margin-left: 3rem;
 }
 
 .proj-summary {
@@ -500,6 +700,7 @@ h5 {
     //align-items: center;
     
     position: absolute;
+    left:0;
     bottom: 0;
     
     padding: 1rem;
@@ -541,9 +742,9 @@ h5 {
 }
 
 .fine-print {
-    font-family: sofia-pro-condensed, sans-serif !important;
+    font-family: $body-font-family;
+    font-weight: normal;
     font-style: normal;
-    font-weight: 300;
     font-size: 1rem;
     margin-top:1rem;
 }
@@ -554,8 +755,8 @@ h5 {
 }
 
 #navbar-main-contents {
-    background-color: $background-gray;
-    padding: 0;
+    //background-color: $background-gray;
+    //padding: 0;
 }
 
 .icon-bar {
@@ -573,8 +774,7 @@ h5 {
     margin-bottom: 2.5rem;
     //border: 10px solid black;
     //box-shadow: 6px 6px 6px;
-    width: 40rem;
-    max-width: 100%;
+    text-align: left;
 }
 
 .portfolio-card {
@@ -756,7 +956,7 @@ h5 {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5rem;
+    //margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
@@ -952,24 +1152,24 @@ h5 {
 }
 
 .contact-info {
-    margin-bottom: .75rem;
-}
-
-.contact-info:hover {
-    cursor: pointer;
+    margin-bottom: .25rem;
 }
 
 .contact-info>img {
-    height: 1.25em;
-    position: absolute;
+    height: .75em;
 }
 
-.contact-info>span {
-    margin-left: 2.5em;
-}
-
-.contact-info>span>a {
+.contact-info>span, .contact-info>a {
+    margin-left: 0.5em;
+    position:absolute;
     color: $text-gray;
+    font-weight: 400 !important;
+}
+
+.contact-info:hover>a {
+    cursor: pointer;
+    color: $primary-blue;
+    text-decoration: underline;
 }
 
 .proj-title {
@@ -987,16 +1187,35 @@ h5 {
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    margin-top: -1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1.75rem;
     
 }
 
-a {
-    color: $primary-blue;
-    font-weight:700;
+.callout {
+    border-left: 5px solid $primary-blue;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-a:hover {
+.callout > p {
+    font-family: $header-font-family;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 0px;
+}
+
+.callout > p > b {
     color: $primary-blue;
+}
+
+.callout > span {
+    font-family: $body-font-family;
+}
+
+.callout > h4 {
+    text-align: left;
+    margin-bottom: 1rem;
 }
