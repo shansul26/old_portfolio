@@ -22,7 +22,7 @@ skills:
     - text: User testing
     - text: FSDs
 sections:
-    - text: the process
+    - text: Process
       id: process
 ---
 
@@ -32,11 +32,11 @@ sections:
 </div>
 
 <div id="solution" class="portfolio-section">
-    <h2>the solution</h2>
+    <h1>the solution</h1>
 </div>-->
 
 <div id="process" class="portfolio-section">
-    <h2>the process</h2>
+    <h1>Process</h1>
     <img class="portfolio-img" src="../img/Quantum%20Vue/quantum-vue-process.png">
     <div class="fine-print" style="margin-top:-2rem;">Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </div>

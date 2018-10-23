@@ -51,6 +51,8 @@ $(document).ready(function () {
     $("#resume-download").on('click', downloadResume);
     $("#resume-download-body").on('click', downloadResume);
     
+    $(".logo").on('click', goHome);
+    
     $('#portfolio-nav').affix({
         offset: {
             top: 75
@@ -64,6 +66,10 @@ $(document).ready(function () {
 
 function downloadResume () {
     window.open("https://drive.google.com/open?id=0B9Mvk0EG_5EvSnlENXdWSkxabDQ");
+}
+
+function goHome () {
+    window.location.assign("../");
 }
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */

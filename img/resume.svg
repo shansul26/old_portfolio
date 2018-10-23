@@ -3,12 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 640 480" style="enable-background:new 0 0 640 480;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:#2F68B2;}
+	.st0{fill:#FFFFFF;stroke:#2F68B2;stroke-width:60;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#2F68B2;stroke-width:40;stroke-miterlimit:10;}
 </style>
 <title>Email</title>
-<polygon class="st0" points="320,290.9 319.6,290.6 53,94.6 53,427 587,427 587,94.6 320.4,290.6 "/>
-<polygon class="st0" points="554.1,53 85.9,53 320,225.1 "/>
-<path class="st1" d="M626.1,0H0v480h640V0H626.1z M554.1,53L320,225.1L85.9,53H554.1z M587,427H53V94.6l266.6,196.1l0.4,0.3l0.4-0.3
-	L587,94.6V427z"/>
+<polygon class="st0" points="422.7,449.6 61.8,449.6 61.8,29.8 323.7,29.8 323,132.7 422.7,134.2 "/>
+<line class="st1" x1="438.3" y1="118.3" x2="319.7" y2="-7"/>
 </svg>
