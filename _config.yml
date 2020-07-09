@@ -1,6 +1,6 @@
 # Site settings
 title: Shannon Sullivan
-tagline: "UX Designer"
+tagline: "UX Researcher & Strategist"
 url: "http://shansul.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 permalink: :title.html
 
